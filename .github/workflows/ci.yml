@@ -15,8 +15,8 @@ jobs:
       - name: Setup JDK
         uses: actions/setup-java@v3
         with:
-          distribution: open
-          java-version: 18.0.2
+          distribution: microsoft
+          java-version: 17.0.1
       
       - name: Unit Tests
         run: sbt test
