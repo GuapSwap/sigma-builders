@@ -1,4 +1,4 @@
-# sigma-builders [![Latest version](https://index.scala-lang.org/guapswap/sigma-builders/sigma-builders/latest.svg)](https://index.scala-lang.org/guapswap/sigma-builders/sigma-builders)
+# sigma-builders [![sigma-builders Scala version support](https://index.scala-lang.org/guapswap/sigma-builders/sigma-builders/latest.svg)](https://index.scala-lang.org/guapswap/sigma-builders/sigma-builders)
 Easy to use library for creating protocol abstractions interacting with Ergo blockchain.
 
 ## Motivation
