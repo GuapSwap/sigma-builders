@@ -1,13 +1,13 @@
-package encoders
+package encoders.minting_encoders
 
+import encoders.register_encoders.{R4Encoder, R5Encoder, R6Encoder, R7Encoder}
 import org.ergoplatform.appkit.ErgoValue
 import special.collection.Coll
-import encoders.register_encoders.{R4Encoder, R5Encoder, R6Encoder, R7Encoder}
 
 trait EIP4IssuanceEncoder extends R4Encoder[String, Coll[java.lang.Byte]]
-    with R5Encoder[String, Coll[java.lang.Byte]]
-    with R6Encoder[String, Coll[java.lang.Byte]]
-    with R7Encoder[Array[Byte], Coll[java.lang.Byte]] {
+  with R5Encoder[String, Coll[java.lang.Byte]]
+  with R6Encoder[String, Coll[java.lang.Byte]]
+  with R7Encoder[Array[Byte], Coll[java.lang.Byte]] {
 
   override def encodeR4(tokenName: String): ErgoValue[Coll[java.lang.Byte]] = {
 

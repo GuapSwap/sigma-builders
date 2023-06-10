@@ -1,9 +1,9 @@
-package encoders
+package encoders.minting_encoders
 
+import encoders.register_encoders.{R8Encoder, R9Encoder}
 import org.ergoplatform.appkit.ErgoValue
 import scorex.crypto.hash.Sha256
 import special.collection.Coll
-import encoders.register_encoders.{R8Encoder, R9Encoder}
 
 object EIP4PictureNFTEncoder extends EIP4IssuanceEncoder
   with R8Encoder[String, Coll[java.lang.Byte]]
