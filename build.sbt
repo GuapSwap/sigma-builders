@@ -37,6 +37,9 @@ inThisBuild(List(
   ),
   sonatypeCredentialHost := "s01.oss.sonatype.org",
   sonatypeRepository := "https://s01.oss.sonatype.org/service/local",
-
+  resolvers := List(
+    "Sonatype OSS Releases" at "https://s01.oss.sonatype.org/content/repositories/releases",
+    "Sonatype OSS Snapshots" at "https://s01.oss.sonatype.org/content/repositories/snapshots"
+  )
 
 ))
