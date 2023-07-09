@@ -1,0 +1,5 @@
+package encoders
+
+trait BoxEncoder {
+
+}

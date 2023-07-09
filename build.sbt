@@ -1,19 +1,4 @@
-lazy val root = (project in file("."))
-  .settings(
-    name := "sigma-builders",
-
-    version := "0.1.1",
-
-    scalaVersion := "2.12.15",
-
-    libraryDependencies ++= Seq (
-      "org.ergoplatform" %% "ergo-appkit" % "5.0.2"
-    ),
-
-    assembly / assemblyJarName := s"${name.value}-${version.value}.jar",
-    assembly / assemblyOutputPath := file(s"./${name.value}-${version.value}.jar/")
-  )
-
+import dependencies._
 
 inThisBuild(List(
   organization := "org.guapswap", // group id
@@ -35,11 +20,23 @@ inThisBuild(List(
       url("https://github.com/lucagdangelo")
     )
   ),
+
+  libraryDependencies ++=
+    Ergo ++
+    Testing
+  ,
+
   sonatypeCredentialHost := "s01.oss.sonatype.org",
   sonatypeRepository := "https://s01.oss.sonatype.org/service/local",
+
   resolvers := List(
     "Sonatype OSS Releases" at "https://s01.oss.sonatype.org/content/repositories/releases",
     "Sonatype OSS Snapshots" at "https://s01.oss.sonatype.org/content/repositories/snapshots"
-  )
+  ),
+
+  versionScheme := Some ("semver-spec"),
+  assembly / assemblyJarName := s"${name.value}-${version.value}.jar",
+  assembly / assemblyOutputPath := file(s"./${name.value}-${version.value}.jar/")
+
 
 ))
