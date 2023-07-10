@@ -1,24 +1,23 @@
 package encoders.minting_encoders
 
-import encoders.register_encoders.{R8Encoder, R9Encoder}
 import org.ergoplatform.appkit.ErgoValue
 import scorex.crypto.hash.Sha256
 import special.collection.Coll
 
-object EIP4PictureNFTEncoder extends EIP4IssuanceEncoder
-  with R8Encoder[String, Coll[java.lang.Byte]]
-  with R9Encoder[String, Coll[java.lang.Byte]] {
+import java.nio.charset.StandardCharsets
 
-  override def encodeR8(pictureContent: String): ErgoValue[Coll[java.lang.Byte]] = {
+object EIP4PictureNFTEncoder extends EIP4IssuanceEncoder {
+
+  def encodeR8(pictureContent: String): ErgoValue[Coll[java.lang.Byte]] = {
 
     val pictureHash: Array[Byte] = Sha256.hash(pictureContent)
     ErgoValue.of(pictureHash)
 
   }
 
-  override def encodeR9(pictureLink: String): ErgoValue[Coll[java.lang.Byte]] = {
+  def encodeR9(pictureLink: String): ErgoValue[Coll[java.lang.Byte]] = {
 
-    val pictureLinkByteArray: Array[Byte] = pictureLink.getBytes("UTF-8")
+    val pictureLinkByteArray: Array[Byte] = pictureLink.getBytes(StandardCharsets.UTF_8)
     ErgoValue.of(pictureLinkByteArray)
 
   }
