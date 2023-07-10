@@ -24,7 +24,7 @@ object EIP24IssuerEncoder extends BoxEncoder {
 
   }
 
-  def encodeR6(properties: Array[(String, String)], levels: Array[(String, (Int, Int))], statistics: Array[(String, (Int, Int))]): ErgoValue[(Coll[(Coll[java.lang.Byte], Coll[java.lang.Byte])], ((Coll[java.lang.Byte], (Integer, Integer)), (Coll[java.lang.Byte], (Integer, Integer))))] = {
+  def encodeR6(properties: Array[(String, String)], levels: Array[(String, (Int, Int))], statistics: Array[(String, (Int, Int))]): ErgoValue[(Coll[(Coll[java.lang.Byte], Coll[java.lang.Byte])], (Coll[(Coll[java.lang.Byte], (Integer, Integer))], Coll[(Coll[java.lang.Byte], (Integer, Integer))]))] = {
 
     val props: Array[(Array[Byte], Array[Byte])] = properties.map((p: (String, String)) => (p._1.getBytes(StandardCharsets.UTF_8), p._2.getBytes(StandardCharsets.UTF_8)))
     val props1: Array[(Coll[java.lang.Byte], Coll[java.lang.Byte])] = props.map((p: (Array[Byte], Array[Byte])) => ErgoValue.pairOf(ErgoValue.of(p._1), ErgoValue.of(p._2)).getValue)
