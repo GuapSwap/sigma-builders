@@ -2,11 +2,11 @@ import dependencies._
 
 inThisBuild(List(
   organization := "org.guapswap", // group id
-  name := "sigma-builders", // artifact id
+  name := "sigmabuilders", // artifact id
   homepage := Some(url("https://guapswap.org")),
   licenses := Seq("GPL-3.0" -> url("https://spdx.org/licenses/GPL-3.0-or-later.html")),
   description := "Easy to use library for creating protocol abstractions interacting with Ergo blockchain.",
-  idePackagePrefix := Some("org.guapswap.sigma-builders"),
+  idePackagePrefix := Some("org.guapswap.sigmabuilders"),
   scmInfo := Some(
     ScmInfo(
       url("https://github.com/GuapSwap/sigma-builders"),

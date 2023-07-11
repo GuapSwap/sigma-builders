@@ -1,4 +1,4 @@
-package builders.tx_builders
+package org.guapswap.sigmabuilders.builders.tx_builders
 
 import org.ergoplatform.appkit.{Address, UnsignedTransaction, UnsignedTransactionBuilder}
 

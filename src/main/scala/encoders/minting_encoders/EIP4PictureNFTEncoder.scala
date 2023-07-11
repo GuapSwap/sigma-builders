@@ -1,4 +1,4 @@
-package encoders.minting_encoders
+package org.guapswap.sigmabuilders.encoders.minting_encoders
 
 import org.ergoplatform.appkit.ErgoValue
 import scorex.crypto.hash.Sha256

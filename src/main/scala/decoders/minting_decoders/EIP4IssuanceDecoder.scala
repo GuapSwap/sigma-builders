@@ -1,12 +1,13 @@
-package decoders.minting_decoders
+package org.guapswap.sigmabuilders.decoders.minting_decoders
 
-import encoders.BoxEncoder
+import org.guapswap.sigmabuilders.decoders.BoxDecoder
+
 import org.ergoplatform.appkit.{ErgoValue, JavaHelpers}
 import special.collection.Coll
 
 import java.nio.charset.StandardCharsets
 
-abstract class EIP4IssuanceDecoder extends BoxEncoder {
+abstract class EIP4IssuanceDecoder extends BoxDecoder {
 
   def decodeTokenName(register4Hex: String): (ErgoValue[Coll[Byte]], String) = {
 

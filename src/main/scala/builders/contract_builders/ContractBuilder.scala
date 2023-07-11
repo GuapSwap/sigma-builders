@@ -1,4 +1,4 @@
-package builders.contract_builders
+package org.guapswap.sigmabuilders.builders.contract_builders
 
 import org.ergoplatform.appkit.{BlockchainContext, ErgoContract}
 

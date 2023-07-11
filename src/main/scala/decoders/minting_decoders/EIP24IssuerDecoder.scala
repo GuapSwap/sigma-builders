@@ -1,8 +1,8 @@
-package decoders.minting_decoders
+package org.guapswap.sigmabuilders.decoders.minting_decoders
 
-import encoders.BoxEncoder
-import org.ergoplatform.appkit.{Address, ErgoId, ErgoType, ErgoValue, JavaHelpers, NetworkType}
-import sigmastate.eval.Colls
+import org.guapswap.sigmabuilders.encoders.BoxEncoder
+
+import org.ergoplatform.appkit.{Address, ErgoId, ErgoValue, JavaHelpers, NetworkType}
 import special.collection.Coll
 
 import java.nio.charset.StandardCharsets

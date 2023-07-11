@@ -1,4 +1,4 @@
-package builders.box_builders
+package org.guapswap.sigmabuilders.builders.box_builders
 
 import org.ergoplatform.appkit.{ErgoContract, OutBox, OutBoxBuilder}
 

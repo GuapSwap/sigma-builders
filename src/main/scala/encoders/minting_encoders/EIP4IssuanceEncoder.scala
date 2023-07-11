@@ -1,6 +1,6 @@
-package encoders.minting_encoders
+package org.guapswap.sigmabuilders.encoders.minting_encoders
 
-import encoders.BoxEncoder
+import org.guapswap.sigmabuilders.encoders.BoxEncoder
 
 import org.ergoplatform.appkit.ErgoValue
 import special.collection.Coll
