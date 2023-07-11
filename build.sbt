@@ -4,7 +4,7 @@ inThisBuild(List(
   organization := "org.guapswap", // group id
   name := "sigma-builders", // artifact id
   homepage := Some(url("https://guapswap.org")),
-  licenses := Seq("MIT" -> url("https://opensource.org/licenses/MIT")),
+  licenses := Seq("GPL-3.0" -> url("https://spdx.org/licenses/GPL-3.0-or-later.html")),
   description := "Easy to use library for creating protocol abstractions interacting with Ergo blockchain.",
   scmInfo := Some(
     ScmInfo(
