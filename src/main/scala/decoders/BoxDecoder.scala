@@ -1,0 +1,5 @@
+package decoders
+
+trait BoxDecoder {
+
+}
