@@ -16,8 +16,11 @@ The library currently defines the following packages to help you design your pro
    - contract_builders
    - tx_builders
 - encoders
-   - register_encoders
    - minting_encoders
+- decoders
+   - minting_decoders
+- printers
+   - minting_printers
 ```
 
 When creating your project's structure, it is useful to duplicate the builders hierarchy, since those will be three primary constructs used throughout your protocol.
