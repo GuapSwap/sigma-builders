@@ -1,4 +1,4 @@
-package printers
+package org.guapswap.sigmabuilders.printers
 
 import org.ergoplatform.appkit.{InputBox, NetworkType}
 

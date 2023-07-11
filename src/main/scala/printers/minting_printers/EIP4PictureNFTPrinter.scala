@@ -1,5 +1,6 @@
-package printers.minting_printers
+package org.guapswap.sigmabuilders.printers.minting_printers
 
+import org.guapswap.sigmabuilders._
 import org.ergoplatform.appkit.{InputBox, NetworkType}
 
 object EIP4PictureNFTPrinter extends EIP4IssuanceBoxPrinter {

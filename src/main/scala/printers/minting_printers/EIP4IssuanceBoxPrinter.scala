@@ -1,6 +1,7 @@
-package printers.minting_printers
+package org.guapswap.sigmabuilders.printers.minting_printers
 
-import printers.BoxPrinter
+import org.guapswap.sigmabuilders.printers.BoxPrinter
+import org.guapswap.sigmabuilders._
 
 import org.ergoplatform.appkit.InputBox
 

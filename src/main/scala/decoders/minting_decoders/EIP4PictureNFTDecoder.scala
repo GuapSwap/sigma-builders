@@ -1,4 +1,4 @@
-package decoders.minting_decoders
+package org.guapswap.sigmabuilders.decoders.minting_decoders
 
 import org.ergoplatform.appkit.{ErgoValue, JavaHelpers}
 import special.collection.Coll

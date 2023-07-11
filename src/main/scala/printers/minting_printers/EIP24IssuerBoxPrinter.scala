@@ -1,6 +1,7 @@
-package printers.minting_printers
+package org.guapswap.sigmabuilders.printers.minting_printers
 
-import printers.BoxPrinter
+import org.guapswap.sigmabuilders.printers.BoxPrinter
+import org.guapswap.sigmabuilders._
 
 import org.ergoplatform.appkit.{InputBox, NetworkType}
 
@@ -53,7 +54,7 @@ object EIP24IssuerBoxPrinter extends BoxPrinter {
 
   private def printCollectionTokenId(box: InputBox): Unit = {
 
-    val data = decoders.minting_decoders.EIP24IssuerDecoder.decodeCollectionId(box.getRegisters.get(3).toHex)._2
+    val data = org.guapswap.sigmabuilders.decoders.minting_decoders.EIP24IssuerDecoder.decodeCollectionId(box.getRegisters.get(3).toHex)._2
     val collId = data.toString
 
     println("Register 7 (collection token id): " + collId)
@@ -62,7 +63,7 @@ object EIP24IssuerBoxPrinter extends BoxPrinter {
 
   private def printAdditionalInformation(box: InputBox): Unit = {
 
-    val data = decoders.minting_decoders.EIP24IssuerDecoder.decodeAdditionalInformation(box.getRegisters.get(4).toHex)._2
+    val data = org.guapswap.sigmabuilders.decoders.minting_decoders.EIP24IssuerDecoder.decodeAdditionalInformation(box.getRegisters.get(4).toHex)._2
     val info = data.map(i => i.toString()).mkString("[", ", ", "]")
 
     println("Register 8 (additional information): " + info)
