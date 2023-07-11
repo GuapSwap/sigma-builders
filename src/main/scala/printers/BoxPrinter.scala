@@ -1,6 +1,6 @@
 package printers
 
-import org.ergoplatform.appkit.{ErgoValue, InputBox, NetworkType}
+import org.ergoplatform.appkit.{InputBox, NetworkType}
 
 import scala.collection.JavaConverters._
 
@@ -22,6 +22,8 @@ trait BoxPrinter {
     println("Register 1 (ergotree): " + box.getErgoTree.bytesHex)
     println("Register 2 (tokens): " + box.getTokens.asScala.toList.mkString("[", ", ", "]"))
     println("Register 3 (creation height): " + box.getCreationHeight)
+    println("Register 3 (tx id): " + box.getTransactionId)
+    println("Register 3 (tx index): " + box.getTransactionIndex)
 
   }
 

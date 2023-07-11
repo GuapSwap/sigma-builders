@@ -1,12 +1,8 @@
 package printers.minting_printers
 
-import org.ergoplatform.appkit.{ErgoClient, ErgoValue, InputBox, JavaHelpers, NetworkType}
 import printers.BoxPrinter
-import special.collection.Coll
 
-import java.nio.charset.Charset
-import scala.collection.JavaConverters._
-import scala.reflect._
+import org.ergoplatform.appkit.InputBox
 
 
 abstract class EIP4IssuanceBoxPrinter extends BoxPrinter {
