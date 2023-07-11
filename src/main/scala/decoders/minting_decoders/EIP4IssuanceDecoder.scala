@@ -6,7 +6,7 @@ import special.collection.Coll
 
 import java.nio.charset.StandardCharsets
 
-trait EIP4IssuanceDecoder extends BoxEncoder {
+abstract class EIP4IssuanceDecoder extends BoxEncoder {
 
   def decodeTokenName(register4Hex: String): (ErgoValue[Coll[Byte]], String) = {
 

@@ -8,7 +8,7 @@ import java.nio.charset.StandardCharsets
 
 object EIP34IssuerDecoder extends BoxEncoder {
 
-  def collectionStandardVersionDecoder(register4Hex: String): (ErgoValue[Int], Int) = {
+  def decodeCollectionStandardVersion(register4Hex: String): (ErgoValue[Int], Int) = {
 
     val ev = ErgoValue.fromHex(register4Hex).asInstanceOf[ErgoValue[Int]]
     val value = ev.getValue

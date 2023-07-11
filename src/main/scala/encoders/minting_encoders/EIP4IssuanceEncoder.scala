@@ -9,7 +9,7 @@ import java.nio.charset.StandardCharsets
 
 import scala.language.higherKinds
 
-trait EIP4IssuanceEncoder extends BoxEncoder {
+abstract class EIP4IssuanceEncoder extends BoxEncoder {
 
   def encodeR4(tokenName: String): ErgoValue[Coll[java.lang.Byte]] = {
 
