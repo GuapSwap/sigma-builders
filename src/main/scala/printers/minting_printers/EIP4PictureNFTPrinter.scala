@@ -10,8 +10,8 @@ object EIP4PictureNFTPrinter extends EIP4IssuanceBoxPrinter {
     printRawReservedRegisters(box)
     printDecodedEIP4IssuanceRegisters(box)
 
-    println("Register 8 (sha256 picture hash): " + decoders.minting_decoders.EIP4PictureNFTDecoder.decodePictureContent(box.getRegisters.get(4).toHex)._2)
-    println("Register 9 (picture link): " + decoders.minting_decoders.EIP4PictureNFTDecoder.decodeTokenName(box.getRegisters.get(5).toHex)._2)
+    println("Register 8 (sha256 picture hash): " + decoders.minting_decoders.EIP4PictureNFTDecoder.decodePictureContent(box.getRegisters.get(8).toHex)._2)
+    println("Register 9 (picture link): " + decoders.minting_decoders.EIP4PictureNFTDecoder.decodeTokenName(box.getRegisters.get(9).toHex)._2)
 
   }
 
